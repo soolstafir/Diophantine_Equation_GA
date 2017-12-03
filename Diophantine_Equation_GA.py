@@ -2,7 +2,6 @@
 """
 Spyder Editor
 
-This is a temporary script file.
 """
 
 import random
@@ -176,6 +175,8 @@ class Solver():
         res += "The solution set to %s a + %s b %s c + %s d = %s is:\n" \
             %(self.param.a,
               self.param.b,
+              self.param.c,
+              self.param.d,
               self.param.res)
         res += "a = %s" %gene.alleles[0]
         res += "b = %s" %gene.alleles[1]
@@ -183,4 +184,4 @@ class Solver():
         res += "d = %s" %gene.alleles[3]
         return res + "\n"
 if (__name__ == '__main__'):
-    print(Solver(Param(1,2,3,4,15)))
+    print(Solver(Param(1,2,3,4,45)))
